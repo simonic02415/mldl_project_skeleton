@@ -1,11 +1,5 @@
-os
-shutil
-torchvision.datasets
-collections
+torchvision
 torch
-random
 matplotlib
 requests
-zipfile
-io
 numpy
