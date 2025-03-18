@@ -8,10 +8,10 @@ class CustomNet(nn.Module):
         self.pipeline = nn.Sequential(
           nn.Conv2d(3, 64, kernel_size=3, padding=1, stride=2), #112
           nn.BatchNorm2d(64),
-          nn.ReLU(),
+          nn.LeakyReLU(),
           nn.Conv2d(64, 128, kernel_size=3, padding=1, stride=2), #56
           nn.BatchNorm2d(128),
-          nn.ReLU(),
+          nn.LeakyReLU(),
           # nn.Conv2d(128, 256, kernel_size=3, padding=1, stride=2), #28
           # nn.ReLU(),
           # nn.Conv2d(256, 512, kernel_size=3, padding=1, stride=2),#14
